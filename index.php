@@ -8,5 +8,6 @@
 </head>
 <body>
     <h1>WELCOME TO THE java</h1>
+    <h1><?php echo"<h1>$_SESSION[name]</h1>"?><
 </body>
 </html>
