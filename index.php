@@ -8,6 +8,14 @@
 </head>
 <body>
     <h1>WELCOME TO THE java</h1>
-    <h1><?php echo"<h1>$_SESSION[name]</h1>"?><
+    <h1>
+        <?php 
+        
+        session_start();
+        if($_SESSION['auth']){
+        echo $_SESSION['login'];}
+        
+        ?>
+        <button onclick =" location.href = 'profile.php'">Change profile data</button>
 </body>
 </html>

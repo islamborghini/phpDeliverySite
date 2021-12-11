@@ -54,7 +54,7 @@ if(count($err) == 0)
          false, '".$phone."', 
         '".$date_of_registration."' )");
         echo '<p style="font-size: 32px;">Registration success.</p> 
-        <a href="index.php"><h1 position:relative; top:100px; left: 100px;">
+        <a href="authorization.php"><h1 position:relative; top:100px; left: 100px;">
         На главную</h1></a>';
          exit();/*echo("login:".$login." ".
         "name:".$userName." ".

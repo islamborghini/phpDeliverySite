@@ -42,11 +42,12 @@
       session_start(); 
       //Пишем в сессию информацию о том, что мы авторизовались:
       $_SESSION['auth'] = true; 
-      //Пишем в сессию логин и id пользователя (их мы берем из переменной $user!): 
-      $_SESSION['login'] = $user['login']; 
+      //Пишем в сессию логин и id пользователя (их мы берем из переменной $user!):
+      $_SESSION['id'] = $user['id']; 
+      $_SESSION['login'] = $login; 
       sleep(5);
       header('Location: index.php');
-    }else {
+    } else {
       echo"Неправильный логин или пароль";
 
     }
